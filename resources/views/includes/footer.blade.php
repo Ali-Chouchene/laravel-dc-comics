@@ -3,9 +3,13 @@
     <div id="footer-nav" class="bg-blue">
         <div class="container">
             <div class="row-b">
-                <!---------- toooo dooo file testo ciclo ----------->
+                @foreach ($cards as $card)
+                <div class="col row">
+                    <img src="../img/{{$card['img']}}" alt="">
+                    <h5>{{ $card['text'] }}</h5>
+                </div>
+                @endforeach
             </div>
-
         </div>
     </div>
     <!---------------------------------------------------------->

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ComicController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -47,15 +48,7 @@ Route::get('/movies', function () {
 
 
 
-Route::get('/comics', function () {
-    $links = config('navbar');
-    $f_card = config('cards');
-    $socials = config('socials');
-    $comics = config('comics');
-
-    $data = ['cards' => $f_card, 'links' => $links, 'socials' => $socials, 'comics' => $comics];
-    return view('comics', $data);
-})->name('comics');
+Route::resource('comics', ComicController::class);
 
 
 
