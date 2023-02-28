@@ -43,9 +43,14 @@ class ComicController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(Comic $comic)
     {
-        //
+        $links = config('navbar');
+        $f_card = config('cards');
+        $socials = config('socials');
+
+        $data = ['cards' => $f_card, 'links' => $links, 'socials' => $socials, 'comic' => $comic];
+        return view('comics.show', $data);
     }
 
     /**

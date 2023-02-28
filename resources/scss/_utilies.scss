@@ -32,8 +32,20 @@
     align-items: center;
 }
 
+.row-c {
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .bg-blue {
     background-color: $blue;
+}
+
+.bg-white {
+    background-color: aliceblue;
+    color: black;
 }
 
 .mt {
@@ -44,9 +56,39 @@ img {
     display: block;
 }
 
+.text-center {
+    text-align: center;
+}
+
+.size {
+    width: 250px;
+    margin: 1rem auto;
+}
+
 .bg-dark {
     background-color: rgb(56, 55, 55);
     color: $white ;
     padding: 1rem 0;
     min-height: 65vh;
+}
+
+.w-40 {
+    width: 40%;
+}
+
+.w-40l {
+    width: 40%;
+    line-height: 25px;
+}
+
+.pad {
+    padding: 1rem;
+}
+
+hr {
+    color: black;
+}
+
+.mx {
+    margin: 0 auto;
 }

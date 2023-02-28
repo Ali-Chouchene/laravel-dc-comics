@@ -6,10 +6,14 @@
 <div class="container">
     <div class="d-flex">
         @foreach($comics as $comic)
+
         <div class="card row c">
-            <img src="{{$comic['thumb']}}" alt="">
-            <h3>{{$comic['title']}}</h3>
+            <a href="{{route('comics.show', $comic->id)}}">
+                <img src="{{$comic['thumb']}}" alt="">
+                <h3>{{$comic['title']}}</h3>
+            </a>
         </div>
+
         @endforeach
     </div>
 </div>
