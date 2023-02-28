@@ -1,0 +1,142 @@
+#footer-nav {
+    color: $white;
+    position: relative;
+    z-index: 1;
+
+    h5 {
+        cursor: pointer;
+
+        &:hover {
+            color: $black;
+        }
+    }
+
+    img {
+        height: 60px;
+        width: 50px;
+        aspect-ratio: 3/2;
+        object-fit: contain;
+        margin: 1.5rem 0;
+        padding-right: .5rem;
+
+    }
+}
+
+#mid-footer {
+
+    max-height: 500px;
+    position: relative;
+    height: calc(100vh - 32vh);
+    background-image: url(../../public/img/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+
+    .more-info {
+        width: 35%;
+        padding-top: 5rem;
+        display: flex;
+        gap: 2.3rem;
+        flex-wrap: wrap;
+        align-content: flex-start;
+
+        h3 {
+            color: white;
+            margin: 0.7rem 0;
+        }
+
+        ul {
+            list-style: none;
+
+            li {
+
+                a {
+                    text-decoration: none;
+                    color: gray;
+                    font-weight: 500;
+                    line-height: 25px;
+                    font-size: small;
+
+                    &:hover {
+                        color: dodgerblue
+                    }
+                }
+
+            }
+        }
+    }
+
+    img {
+        position: absolute;
+        bottom: 5%;
+        right: 300px;
+        z-index: 0;
+    }
+
+}
+
+#footer-bt {
+    .f-b-bg {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: 2;
+        background-color: rgb(48, 48, 48);
+    }
+
+    .f-b {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        button {
+            padding: 15px 20px;
+            color: white;
+            background-color: transparent;
+            border: 2px solid dodgerblue;
+            cursor: pointer;
+
+            &:hover {
+                background-color: dodgerblue;
+                color: black;
+            }
+        }
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+
+        h3 {
+            color: dodgerblue;
+            padding-right: 10px;
+        }
+
+        li {
+            height: 100%;
+
+            a {
+                text-decoration: none;
+                padding: 1rem;
+                font-size: 17px;
+
+
+                img {
+                    aspect-ratio: 3/2;
+                    object-fit: contain;
+                    margin: 0;
+                    border-radius: 50%;
+
+                    &:hover {
+                        background-color: rgb(0, 60, 255);
+                    }
+                }
+
+
+
+            }
+        }
+    }
+}
