@@ -12,8 +12,8 @@
         </div>
         <hr>
         <h3 class="mt">Infos</h3>
-        <div class="d-flex">
-            <div class="w-40 mx">
+        <div class="">
+            <div class="my">
                 <div class="mt text-center">
                     <div>
                         <h4>Artists:</h4>
@@ -25,7 +25,7 @@
                     </div>
                 </div>
             </div>
-            <div class="w-40 mx">
+            <div class="my">
                 <div class="mt text-center ">
                     <div>
                         <h4>Type:</h4>
@@ -37,7 +37,7 @@
                     </div>
                     <div class="mt">
                         <h4>Sale Date:</h4>
-                        <i>${{$comic->sale_date}}</i>
+                        <i>{{$comic->sale_date}}</i>
                     </div>
                 </div>
             </div>

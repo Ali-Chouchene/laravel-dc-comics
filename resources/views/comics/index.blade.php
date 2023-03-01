@@ -3,10 +3,13 @@
 @section('title', 'Comics')
 
 @section('content')
-<div class="container">
+<div class="container text-center">
+    <div class="my">
+        <a href="{{ route('comics.create')}}" class="btn">Aggiungi un fumetto</a>
+    </div>
     <div class="d-flex">
-        @foreach($comics as $comic)
 
+        @foreach($comics as $comic)
         <div class="card row c">
             <a href="{{route('comics.show', $comic->id)}}">
                 <img src="{{$comic['thumb']}}" alt="">

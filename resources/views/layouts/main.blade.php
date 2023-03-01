@@ -8,9 +8,11 @@
     <link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/3/3d/DC_Comics_logo.svg" />
     <!-- fontawsome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    @yield('cdns')
     @vite('resources/js/app.js')
     <title>DC COMICS | @yield('title')</title>
 </head>
+
 <body>
     @include('includes.header')
     <main class="bg-dark">
@@ -20,4 +22,3 @@
 </body>
 
 </html>
-
