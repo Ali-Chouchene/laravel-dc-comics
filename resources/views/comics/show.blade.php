@@ -5,6 +5,14 @@
 @section('content')
 <div class="container pad bg-white">
     <div class="row-c mt">
+        <div class="d-flex">
+            <a class="btn" href="{{route('comics.edit', $comic->id)}}">Edit</a>
+            <form action="{{route('comics.destroy', $comic->id)}}" method="POST">
+                @method('DELETE')
+                @csrf
+                <button class="btn-d">Delete</button>
+            </form>
+        </div>
         <img class="size" src="{{$comic['thumb']}}" alt="">
         <h2>{{$comic->title}}</h2>
         <div class="text-center mt w-40">
